@@ -1,0 +1,32 @@
+name: CI Test Cases
+
+on:
+  push:
+    branches:
+      - feat-workflow
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v4
+
+      - name: Setup Java
+        uses: actions/setup-java@v4
+        with:
+          distribution: 'temurin'
+          java-version: '17'
+          cache: 'maven'
+
+      - name: Setup Browser
+        uses: browser-actions/setup-chrome@latest
+      - run: chrome --version
+        
+      - name: Maven Install
+        working-directory: test-framework
+        run: mvn clean install -DskipTests=true
+        
+      - name: Build with Maven
+        working-directory: test-framework
+        run: mvn test
