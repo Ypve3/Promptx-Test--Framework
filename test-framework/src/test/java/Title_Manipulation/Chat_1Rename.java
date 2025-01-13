@@ -19,9 +19,7 @@ public class Chat_1Rename extends BaseClass {
         ChromeOptions options = new ChromeOptions();
         options.addArguments("--incognito");
         try {
-            // Start the test
-            test = reports.createTest("Valid Scenario Test");
-            
+         
             // Initialize wait
             wait = new WebDriverWait(driver, Duration.ofSeconds(10));
 
@@ -58,5 +56,12 @@ public class Chat_1Rename extends BaseClass {
             System.out.println("Test failed: " + e.getMessage());
             Assert.fail("Unexpected exception: " + e.getMessage());
         }
+        
+        finally {
+            // Ensure the browser is closed
+            if (driver != null) {
+                driver.quit();  // Close all windows and end the session
+            }
+        
     }
-}
+}}

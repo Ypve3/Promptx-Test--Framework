@@ -18,17 +18,17 @@ public class Chat_2Bookmark extends BaseClass{
 
 	private WebDriverWait wait;
 	
-	@Test()
+	@Test(priority = 1)
     public void Bookmark() throws InterruptedException {
 		ChromeOptions options = new ChromeOptions();
         options.addArguments("--incognito");
         try {
-        test = reports.createTest("Valid Scenario Test"); // Start ExtentReports logging
+       
         driver.findElement(By.xpath("//div[@title='Chat Search']")).click();
         driver.findElement(By.xpath("//input[@placeholder='Ask something to AI']")).sendKeys("Agile Adoption" + Keys.RETURN);
         Thread.sleep(40000);
         driver.navigate().refresh();
-        driver.findElement(By.xpath("//span[contains(text(),'Agile Adoption')]/following-sibling::span[@aria-label='ellipsis']")).click();
+        driver.findElement(By.xpath("(//span[@aria-label='ellipsis'])[1]")).click();
         driver.findElement(By.xpath("//span[text()='Bookmark']")).click();
         wait = new WebDriverWait(driver, Duration.ofSeconds(10));
         WebElement notification = wait.until(ExpectedConditions.presenceOfElementLocated(
@@ -42,7 +42,7 @@ public class Chat_2Bookmark extends BaseClass{
 
         String expectedMessage = "Bookmarked Successfully";
 
-        // Assert the notification text
+        
         Assert.assertEquals(actualMessage, expectedMessage, "Notification message does not match!");
        
 
@@ -50,13 +50,21 @@ public class Chat_2Bookmark extends BaseClass{
         System.out.println("Test failed: " + e.getMessage());
         Assert.fail("Unexpected exception: " + e.getMessage());
     }
+        finally {
+            // Ensure the browser is closed
+            if (driver != null) {
+                driver.quit();  // Close all windows and end the session
+            }}
 }
 	
-	@Test
-	public void Remove_Bookmark()
+	@Test(priority = 2)
+	public void Remove_Bookmark() throws InterruptedException
 	{
 		
 		driver.findElement(By.xpath("//div[contains(text(),'Bookmark')]")).click();
+		Thread.sleep(3000);
 		driver.findElement(By.xpath("//*[name()='path' and contains(@d,'M908.1 353')]")).click();
+		driver.quit();
 	}
+	
 }

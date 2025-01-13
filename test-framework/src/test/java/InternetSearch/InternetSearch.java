@@ -12,10 +12,11 @@ public class InternetSearch extends BaseClass{
 	
 	@Test
 	public void InterNetSearch() throws InterruptedException {
-		 test = reports.createTest("Valid Scenario Test"); // Start ExtentReports logging
+		 test = reports.createTest("Internet_Search"); // Start ExtentReports logging
 	        driver.findElement(By.xpath("//div[@title='Internet Search']")).click();
 	        driver.findElement(By.xpath("//input[@placeholder='Ask something to AI']")).sendKeys("US Election Results" + Keys.RETURN);
-	        Thread.sleep(50000);
-
+	        Thread.sleep(30000);
+	        driver.quit();
+	        
 	}
 }

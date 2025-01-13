@@ -21,8 +21,8 @@ public class Chat_Delete extends BaseClass {
 		ChromeOptions options = new ChromeOptions();
         options.addArguments("--incognito");
         try {
-         test = reports.createTest("Valid Scenario Test");	
-		 driver.findElement(By.xpath("//span[contains(text(),'Agile Adoption')]/following-sibling::span[@aria-label='ellipsis']")).click();
+         	
+        driver.findElement(By.xpath("(//span[@aria-label='ellipsis'])[1]")).click();
 		 driver.findElement(By.xpath("//div[text()='Delete Chat']")).click();
 		 driver.findElement(By.xpath("//span[text()='Delete']")).click();
 		 wait = new WebDriverWait(driver, Duration.ofSeconds(10));
@@ -45,6 +45,14 @@ public class Chat_Delete extends BaseClass {
 	        System.out.println("Test failed: " + e.getMessage());
 	        Assert.fail("Unexpected exception: " + e.getMessage());
 	    }
+    
+        finally {
+            // Ensure the browser is closed
+            if (driver != null) {
+                driver.quit();  // Close all windows and end the session
+            }
 	}
-		 
 	}
+}
+	 
+	

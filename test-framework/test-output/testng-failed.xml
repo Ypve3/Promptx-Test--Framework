@@ -3,15 +3,15 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="Chat_Response.Chat_Response">
+      <class name="Title_Manipulation.Chat_Delete">
         <methods>
+          <include name="Delete"/>
           <include name="openApp"/>
           <include name="configBs"/>
-          <include name="testValidScenario"/>
           <include name="configAs"/>
           <include name="closeApp"/>
         </methods>
-      </class> <!-- Chat_Response.Chat_Response -->
+      </class> <!-- Title_Manipulation.Chat_Delete -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

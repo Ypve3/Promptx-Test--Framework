@@ -25,7 +25,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 2 failed tests</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -39,7 +39,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-Surefire_suite" class="navigator-link">
-              <span class="suite-name border-passed">Surefire suite</span>
+              <span class="suite-name border-failed">Surefire suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -92,7 +92,26 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">1 method,   1 passed</span>
+                    <span class="method-stats">9 methods, 2 failed,   7 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Surefire_suite" class="hide-methods failed suite-Surefire_suite"> (hide)</a> <!-- hide-methods failed suite-Surefire_suite -->
+                      <a href="#" panel-name="suite-Surefire_suite" class="show-methods failed suite-Surefire_suite"> (show)</a> <!-- show-methods failed suite-Surefire_suite -->
+                    </span>
+                    <div class="method-list-content failed suite-Surefire_suite">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="Title_Manipulation.Chat_Delete" class="method navigator-link" hash-for-method="Delete">Delete</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="Title_Manipulation.Chat_1Rename" class="method navigator-link" hash-for-method="Rename">Rename</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Surefire_suite -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -101,6 +120,36 @@
                       <a href="#" panel-name="suite-Surefire_suite" class="show-methods passed suite-Surefire_suite"> (show)</a> <!-- show-methods passed suite-Surefire_suite -->
                     </span>
                     <div class="method-list-content passed suite-Surefire_suite">
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="Title_Manipulation.Chat_2Bookmark" class="method navigator-link" hash-for-method="Bookmark">Bookmark</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="InternetSearch.InternetSearch" class="method navigator-link" hash-for-method="InterNetSearch">InterNetSearch</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="Title_Manipulation.Chat_3Public" class="method navigator-link" hash-for-method="PrivateChat">PrivateChat</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="Title_Manipulation.Chat_2Bookmark" class="method navigator-link" hash-for-method="Remove_Bookmark">Remove_Bookmark</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="Title_Manipulation.Chat_3Public" class="method navigator-link" hash-for-method="publicChat">publicChat</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="Chat_Response.Chat_Response" class="method navigator-link" hash-for-method="testValidScenario">testValidScenario</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Surefire_suite" title="Doc_Search.Doc_Search" class="method navigator-link" hash-for-method="testValidScenario">testValidScenario</a> <!-- method navigator-link -->
@@ -118,6 +167,54 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Surefire_suite" class="panel Surefire_suite">
+          <div class="suite-Surefire_suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">Title_Manipulation.Chat_1Rename</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="Rename">
+                  </a> <!-- Rename -->
+                  <span class="method-name">Rename</span>
+                  <div class="stack-trace">java.lang.AssertionError: Notification message does not match! expected [Chat rename 22successfully to &apos;Automation&apos;] but found [Chat rename successfully to &apos;Automation&apos;]
+	at Title_Manipulation.Chat_1Rename.Rename(Chat_1Rename.java:52)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 37 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Surefire_suite-class-failed -->
+          <div class="suite-Surefire_suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">Title_Manipulation.Chat_Delete</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="Delete">
+                  </a> <!-- Delete -->
+                  <span class="method-name">Delete</span>
+                  <div class="stack-trace">java.lang.AssertionError: Unexpected exception: element not interactable: element has zero size
+  (Session info: chrome=131.0.6778.265)
+Build info: version: &apos;4.27.0&apos;, revision: &apos;d6e718d134&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.12&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [ac739daf3900ca067350f7dfa23599c5, clickElement {id=f.4481F3BFA02A267C3C82B67B562127EF.d.FF40FA7C7F0D520DDACB1575DA655D11.e.63}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.265, chrome: {chromedriverVersion: 131.0.6778.264 (2d05e315153..., userDataDir: C:\Users\Admin\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:9662}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:9662/devtool..., se:cdpVersion: 131.0.6778.265, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (ac739daf3900ca067350f7dfa23599c5)] -&gt; xpath: //span[text()=&apos;Delete&apos;]]
+Session ID: ac739daf3900ca067350f7dfa23599c5
+	at Title_Manipulation.Chat_Delete.Delete(Chat_Delete.java:46)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 33 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Surefire_suite-class-failed -->
           <div class="suite-Surefire_suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
@@ -133,6 +230,80 @@
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
           </div> <!-- suite-Surefire_suite-class-passed -->
+          <div class="suite-Surefire_suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">Title_Manipulation.Chat_2Bookmark</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="Bookmark">
+                  </a> <!-- Bookmark -->
+                  <span class="method-name">Bookmark</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Remove_Bookmark">
+                  </a> <!-- Remove_Bookmark -->
+                  <span class="method-name">Remove_Bookmark</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Surefire_suite-class-passed -->
+          <div class="suite-Surefire_suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">Chat_Response.Chat_Response</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testValidScenario">
+                  </a> <!-- testValidScenario -->
+                  <span class="method-name">testValidScenario</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Surefire_suite-class-passed -->
+          <div class="suite-Surefire_suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">Title_Manipulation.Chat_3Public</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="PrivateChat">
+                  </a> <!-- PrivateChat -->
+                  <span class="method-name">PrivateChat</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="publicChat">
+                  </a> <!-- publicChat -->
+                  <span class="method-name">publicChat</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Surefire_suite-class-passed -->
+          <div class="suite-Surefire_suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">InternetSearch.InternetSearch</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="InterNetSearch">
+                  </a> <!-- InterNetSearch -->
+                  <span class="method-name">InterNetSearch</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Surefire_suite-class-passed -->
         </div> <!-- panel Surefire_suite -->
         <div panel-name="test-xml-Surefire_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
@@ -141,10 +312,16 @@
             <pre>
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
-&lt;suite name=&quot;Surefire suite&quot; verbose=&quot;0&quot;&gt;
-  &lt;test thread-count=&quot;5&quot; name=&quot;Surefire test&quot; verbose=&quot;0&quot;&gt;
+&lt;suite thread-count=&quot;1&quot; name=&quot;Surefire suite&quot; verbose=&quot;0&quot;&gt;
+  &lt;test thread-count=&quot;1&quot; name=&quot;Surefire test&quot; verbose=&quot;0&quot;&gt;
     &lt;classes&gt;
+      &lt;class name=&quot;Chat_Response.Chat_Response&quot;/&gt;
       &lt;class name=&quot;Doc_Search.Doc_Search&quot;/&gt;
+      &lt;class name=&quot;InternetSearch.InternetSearch&quot;/&gt;
+      &lt;class name=&quot;Title_Manipulation.Chat_1Rename&quot;/&gt;
+      &lt;class name=&quot;Title_Manipulation.Chat_2Bookmark&quot;/&gt;
+      &lt;class name=&quot;Title_Manipulation.Chat_3Public&quot;/&gt;
+      &lt;class name=&quot;Title_Manipulation.Chat_Delete&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Surefire test --&gt;
 &lt;/suite&gt; &lt;!-- Surefire suite --&gt;
@@ -158,7 +335,7 @@
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">Surefire test (1 class)</span>
+                <span class="test-name">Surefire test (7 classes)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -184,16 +361,48 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(1);
+data.addRows(9);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'testValidScenario')
-data.setCell(0, 2, 'Doc_Search.Doc_Search')
-data.setCell(0, 3, 5242);
+data.setCell(0, 1, 'Bookmark')
+data.setCell(0, 2, 'Title_Manipulation.Chat_2Bookmark')
+data.setCell(0, 3, 46367);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'InterNetSearch')
+data.setCell(1, 2, 'InternetSearch.InternetSearch')
+data.setCell(1, 3, 32108);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'testValidScenario')
+data.setCell(2, 2, 'Chat_Response.Chat_Response')
+data.setCell(2, 3, 31938);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'testValidScenario')
+data.setCell(3, 2, 'Doc_Search.Doc_Search')
+data.setCell(3, 3, 6122);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'Remove_Bookmark')
+data.setCell(4, 2, 'Title_Manipulation.Chat_2Bookmark')
+data.setCell(4, 3, 5479);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'Rename')
+data.setCell(5, 2, 'Title_Manipulation.Chat_1Rename')
+data.setCell(5, 3, 5110);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'PrivateChat')
+data.setCell(6, 2, 'Title_Manipulation.Chat_3Public')
+data.setCell(6, 3, 4716);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'publicChat')
+data.setCell(7, 2, 'Title_Manipulation.Chat_3Public')
+data.setCell(7, 3, 3528);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'Delete')
+data.setCell(8, 2, 'Title_Manipulation.Chat_Delete')
+data.setCell(8, 3, 2910);
 window.suiteTableData['Surefire_suite']= { tableData: data, tableDiv: 'times-div-Surefire_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 5 seconds</span>
+              <span class="suite-total-time">Total running time: 2 minutes</span>
               <div id="times-div-Surefire_suite">
               </div> <!-- times-div-Surefire_suite -->
             </div> <!-- times-div -->
@@ -208,9 +417,63 @@ return data;
         </div> <!-- panel -->
         <div panel-name="ignored-methods-Surefire_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">0 ignored methods</span>
+            <span class="header-content">12 ignored methods</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">Doc_Search.Doc_Search</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">configBs</span>
+                <br/>
+                <span class="ignored-method-name">configAs</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">Title_Manipulation.Chat_2Bookmark</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">configAs</span>
+                <br/>
+                <span class="ignored-method-name">configBs</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">Title_Manipulation.Chat_1Rename</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">configBs</span>
+                <br/>
+                <span class="ignored-method-name">configAs</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">Title_Manipulation.Chat_Delete</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">configBs</span>
+                <br/>
+                <span class="ignored-method-name">configAs</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">Title_Manipulation.Chat_3Public</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">configAs</span>
+                <br/>
+                <span class="ignored-method-name">configBs</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">InternetSearch.InternetSearch</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">configAs</span>
+                <br/>
+                <span class="ignored-method-name">configBs</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
         <div panel-name="chronological-Surefire_suite" class="panel">
@@ -219,26 +482,151 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">Doc_Search.Doc_Search</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">Chat_Response.Chat_Response</div> <!-- chronological-class-name -->
               <div class="configuration-suite before">
                 <span class="method-name">configBs</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-suite before -->
               <div class="configuration-method before">
                 <span class="method-name">openApp</span>
-                <span class="method-start">706 ms</span>
+                <span class="method-start">510 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">testValidScenario</span>
-                <span class="method-start">10809 ms</span>
+                <span class="method-start">8915 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">closeApp([TestResult name=testValidScenario status=SUCCESS method=Chat_Response.testValidScenario()[pri:0, in...)</span>
+                <span class="method-start">40859 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">Doc_Search.Doc_Search</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">openApp</span>
+                <span class="method-start">40889 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testValidScenario</span>
+                <span class="method-start">45306 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">closeApp([TestResult name=testValidScenario status=SUCCESS method=Doc_Search.testValidScenario()[pri:0, insta...)</span>
-                <span class="method-start">16057 ms</span>
+                <span class="method-start">51431 ms</span>
               </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">InternetSearch.InternetSearch</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">openApp</span>
+                <span class="method-start">51448 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">InterNetSearch</span>
+                <span class="method-start">60187 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">closeApp([TestResult name=InterNetSearch status=SUCCESS method=InternetSearch.InterNetSearch()[pri:0, instanc...)</span>
+                <span class="method-start">92296 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">Title_Manipulation.Chat_1Rename</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">openApp</span>
+                <span class="method-start">92298 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">Rename</span>
+                <span class="method-start">97202 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">closeApp([TestResult name=Rename status=FAILURE method=Chat_1Rename.Rename()[pri:0, instance:Title_Manipulati...)</span>
+                <span class="method-start">102317 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">Title_Manipulation.Chat_2Bookmark</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">openApp</span>
+                <span class="method-start">102344 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">Bookmark</span>
+                <span class="method-start">109226 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">closeApp([TestResult name=Bookmark status=SUCCESS method=Chat_2Bookmark.Bookmark()[pri:1, instance:Title_Mani...)</span>
+                <span class="method-start">155593 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">openApp</span>
+                <span class="method-start">155597 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">Remove_Bookmark</span>
+                <span class="method-start">159994 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">closeApp([TestResult name=Remove_Bookmark status=SUCCESS method=Chat_2Bookmark.Remove_Bookmark()[pri:2, insta...)</span>
+                <span class="method-start">165474 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">Title_Manipulation.Chat_3Public</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">openApp</span>
+                <span class="method-start">165476 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">publicChat</span>
+                <span class="method-start">172700 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">closeApp([TestResult name=publicChat status=SUCCESS method=Chat_3Public.publicChat()[pri:1, instance:Title_Ma...)</span>
+                <span class="method-start">176228 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">openApp</span>
+                <span class="method-start">176231 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">PrivateChat</span>
+                <span class="method-start">180717 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">closeApp([TestResult name=PrivateChat status=SUCCESS method=Chat_3Public.PrivateChat()[pri:2, instance:Title_...)</span>
+                <span class="method-start">185433 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">Title_Manipulation.Chat_Delete</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">openApp</span>
+                <span class="method-start">185434 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">Delete</span>
+                <span class="method-start">191884 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">closeApp([TestResult name=Delete status=FAILURE method=Chat_Delete.Delete()[pri:0, instance:Title_Manipulatio...)</span>
+                <span class="method-start">194795 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">Chat_Response.Chat_Response</div> <!-- chronological-class-name -->
               <div class="configuration-suite after">
                 <span class="method-name">configAs</span>
-                <span class="method-start">16994 ms</span>
+                <span class="method-start">194881 ms</span>
               </div> <!-- configuration-suite after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
