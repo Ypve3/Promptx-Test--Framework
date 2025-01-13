@@ -23,6 +23,10 @@ jobs:
         uses: browser-actions/setup-chrome@latest
       - run: chrome --version
         
+      - name: Maven Install
+        working-directory: test-framework
+        run: mvn clean install -DskipTests=true
+        
       - name: Build with Maven
         working-directory: test-framework
-        run: mvn -B -X clean test
+        run: mvn test
