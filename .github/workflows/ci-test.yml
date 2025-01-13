@@ -23,6 +23,7 @@ jobs:
         uses: browser-actions/setup-chrome@v1 
         with:
           chrome-version: 120
+          install-dependencies: true
           install-chromedriver: true
       - run: chrome --version
         
@@ -30,9 +31,13 @@ jobs:
         working-directory: test-framework
         run: mvn clean install -DskipTests=true
         
-      - name: Build with Maven
+      - name: Run Selenium Tests with Maven
         working-directory: test-framework
         env:
           DISPLAY: ':99'
         run: |
+          # Start a virtual display for headless Chrome
+          Xvfb :99 -screen 0 1920x1080x24 & 
+          # Run tests
           mvn test
+          
