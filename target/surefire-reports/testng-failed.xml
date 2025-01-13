@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="1" name="Failed suite [Surefire suite]" verbose="0">
+  <test thread-count="1" name="Surefire test(failed)" verbose="0">
+    <classes>
+      <class name="Title_Manipulation.Chat_1Rename">
+        <methods>
+          <include name="Rename"/>
+          <include name="openApp"/>
+          <include name="configBs"/>
+          <include name="configAs"/>
+          <include name="closeApp"/>
+        </methods>
+      </class> <!-- Title_Manipulation.Chat_1Rename -->
+      <class name="Title_Manipulation.Chat_Delete">
+        <methods>
+          <include name="Delete"/>
+          <include name="openApp"/>
+          <include name="configBs"/>
+          <include name="configAs"/>
+          <include name="closeApp"/>
+        </methods>
+      </class> <!-- Title_Manipulation.Chat_Delete -->
+    </classes>
+  </test> <!-- Surefire test(failed) -->
+</suite> <!-- Failed suite [Surefire suite] -->

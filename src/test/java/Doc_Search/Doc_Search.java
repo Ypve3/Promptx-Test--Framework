@@ -14,7 +14,7 @@ public class Doc_Search extends BaseClass{
 	
 	@Test()
     public void testValidScenario() throws InterruptedException {
-        test = reports.createTest("Valid Scenario Test"); // Start ExtentReports logging
+         // Start ExtentReports logging
         driver.findElement(By.xpath("//div[@title='Files Search']")).click();
         driver.findElement(By.xpath("//input[@placeholder='Ask something to AI']")).sendKeys("Dbs" + Keys.RETURN);
         List<WebElement> elements = driver.findElements(By.xpath("//div[@class='row-doc-details']"));
@@ -36,6 +36,8 @@ public class Doc_Search extends BaseClass{
             System.out.println("Assertion Failed: No element contains 'DBS'.");
         }
        	
+        driver.quit();
+        
 	
 }
 }
