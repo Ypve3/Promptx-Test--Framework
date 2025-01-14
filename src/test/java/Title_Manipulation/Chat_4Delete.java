@@ -13,7 +13,7 @@ import org.testng.annotations.Test;
 
 import genericLib.BaseClass;
 
-public class Chat_Delete extends BaseClass {
+public class Chat_4Delete extends BaseClass {
   
 	private WebDriverWait wait;
 	
