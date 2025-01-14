@@ -3,7 +3,7 @@ name: CI Test Cases
 on:
   push:
     branches:
-      - main
+      - feat-action
 
 jobs:
   test:
@@ -59,4 +59,15 @@ jobs:
           Xvfb :99 -screen 0 1920x1080x24 & 
           # Run tests
           mvn test
-          
+
+  notify:
+    needs: test
+    runs-on: ubuntu-latest
+    if: failure()
+    steps:
+      - name: Notify Microsoft Teams
+        run: |
+          curl -H 'Content-Type: application/json' \
+               -d '{"@type": "MessageCard", "@context": "http://schema.org/extensions", "summary": "Workflow Failure", "themeColor": "FF0000", "title": "CI Tests have failed", "text": "CI Tests workflow has encountered an error. Please check the logs for more details."}' \
+               ${{ secrets.TEAMS_WEBHOOK }}
+               
