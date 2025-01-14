@@ -19,11 +19,30 @@ jobs:
           java-version: '17'
           cache: 'maven'
 
+      - name: Install Chrome Dependencies
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y \
+            libnss3 \
+            libx11-xcb1 \
+            libxcomposite1 \
+            libxcursor1 \
+            libxdamage1 \
+            libxi6 \
+            libxtst6 \
+            libpangocairo-1.0-0 \
+            libpangoft2-1.0-0 \
+            libgtk-3-0 \
+            fonts-liberation \
+            libappindicator3-1 \
+            xdg-utils \
+            libgbm1 \
+            xvfb
+            
       - name: Setup Browser
         uses: browser-actions/setup-chrome@v1 
         with:
           chrome-version: 120
-          install-dependencies: true
           install-chromedriver: true
       - run: chrome --version
         
@@ -40,4 +59,3 @@ jobs:
           Xvfb :99 -screen 0 1920x1080x24 & 
           # Run tests
           mvn test
-          
