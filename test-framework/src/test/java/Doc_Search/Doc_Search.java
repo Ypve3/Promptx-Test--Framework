@@ -13,7 +13,7 @@ public class Doc_Search extends BaseClass{
 
 	
 	@Test()
-    public void testValidScenario() throws InterruptedException {
+    public void Doc_Search() throws InterruptedException {
          // Start ExtentReports logging
         driver.findElement(By.xpath("//div[@title='Files Search']")).click();
         driver.findElement(By.xpath("//input[@placeholder='Ask something to AI']")).sendKeys("Dbs" + Keys.RETURN);
