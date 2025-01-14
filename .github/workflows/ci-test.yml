@@ -3,7 +3,7 @@ name: CI Test Cases
 on:
   push:
     branches:
-      - feat-action
+      - main
 
 jobs:
   test:
