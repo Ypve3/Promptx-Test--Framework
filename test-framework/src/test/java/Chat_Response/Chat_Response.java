@@ -10,7 +10,7 @@ public class Chat_Response extends BaseClass {
 
 	
 	@Test()
-    public void testValidScenario() throws InterruptedException {
+    public void ChatResponse() throws InterruptedException {
 //        test = reports.createTest("Chat_Response"); // Start ExtentReports logging
         driver.findElement(By.xpath("//div[@title='Chat Search']")).click();
         driver.findElement(By.xpath("//input[@placeholder='Ask something to AI']")).sendKeys("Promptx" + Keys.RETURN);
