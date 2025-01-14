@@ -3,7 +3,7 @@ name: CI Test Cases
 on:
   push:
     branches:
-      - workflow
+      - main
 
 jobs:
   test:
@@ -38,7 +38,7 @@ jobs:
             xdg-utils \
             libgbm1 \
             xvfb
-            
+
       - name: Setup Browser
         uses: browser-actions/setup-chrome@v1 
         with:
