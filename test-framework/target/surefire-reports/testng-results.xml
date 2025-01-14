@@ -1,44 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="9" passed="7" failed="2" skipped="0">
+<testng-results ignored="0" total="7" passed="7" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-01-13T21:02:00 IST" name="Surefire suite" finished-at="2025-01-13T21:05:15 IST" duration-ms="194352">
+  <suite started-at="2025-01-14T15:20:04 IST" name="Surefire suite" finished-at="2025-01-14T15:24:05 IST" duration-ms="241074">
     <groups>
     </groups>
-    <test started-at="2025-01-13T21:02:00 IST" name="Surefire test" finished-at="2025-01-13T21:05:15 IST" duration-ms="194352">
+    <test started-at="2025-01-14T15:20:04 IST" name="Surefire test" finished-at="2025-01-14T15:24:05 IST" duration-ms="241074">
       <class name="Title_Manipulation.Chat_2Bookmark">
-        <test-method is-config="true" signature="openApp()[pri:0, instance:Title_Manipulation.Chat_2Bookmark@2d6c53fc]" started-at="2025-01-13T21:03:42 IST" name="openApp" finished-at="2025-01-13T21:03:49 IST" duration-ms="6881" status="PASS">
+        <test-method is-config="true" signature="openApp()[pri:0, instance:Title_Manipulation.Chat_2Bookmark@488d1cd7]" started-at="2025-01-14T15:22:48 IST" name="openApp" finished-at="2025-01-14T15:22:52 IST" duration-ms="4048" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openApp -->
-        <test-method signature="Bookmark()[pri:1, instance:Title_Manipulation.Chat_2Bookmark@2d6c53fc]" started-at="2025-01-13T21:03:49 IST" name="Bookmark" finished-at="2025-01-13T21:04:36 IST" duration-ms="46367" status="PASS">
+        <test-method signature="Bookmark()[pri:1, instance:Title_Manipulation.Chat_2Bookmark@488d1cd7]" started-at="2025-01-14T15:22:52 IST" name="Bookmark" finished-at="2025-01-14T15:23:41 IST" duration-ms="48756" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Bookmark -->
-        <test-method is-config="true" signature="closeApp(org.testng.ITestResult)[pri:0, instance:Title_Manipulation.Chat_2Bookmark@2d6c53fc]" started-at="2025-01-13T21:04:36 IST" name="closeApp" finished-at="2025-01-13T21:04:36 IST" duration-ms="2" status="PASS">
+        <test-method is-config="true" signature="closeApp(org.testng.ITestResult)[pri:0, instance:Title_Manipulation.Chat_2Bookmark@488d1cd7]" started-at="2025-01-14T15:23:41 IST" name="closeApp" finished-at="2025-01-14T15:23:41 IST" duration-ms="376" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=Bookmark status=SUCCESS method=Chat_2Bookmark.Bookmark()[pri:1, instance:Title_Manipulation.Chat_2Bookmark@2d6c53fc] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- closeApp -->
-        <test-method is-config="true" signature="openApp()[pri:0, instance:Title_Manipulation.Chat_2Bookmark@2d6c53fc]" started-at="2025-01-13T21:04:36 IST" name="openApp" finished-at="2025-01-13T21:04:40 IST" duration-ms="4397" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- openApp -->
-        <test-method signature="Remove_Bookmark()[pri:2, instance:Title_Manipulation.Chat_2Bookmark@2d6c53fc]" started-at="2025-01-13T21:04:40 IST" name="Remove_Bookmark" finished-at="2025-01-13T21:04:45 IST" duration-ms="5479" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Remove_Bookmark -->
-        <test-method is-config="true" signature="closeApp(org.testng.ITestResult)[pri:0, instance:Title_Manipulation.Chat_2Bookmark@2d6c53fc]" started-at="2025-01-13T21:04:45 IST" name="closeApp" finished-at="2025-01-13T21:04:45 IST" duration-ms="1" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=Remove_Bookmark status=SUCCESS method=Chat_2Bookmark.Remove_Bookmark()[pri:2, instance:Title_Manipulation.Chat_2Bookmark@2d6c53fc] output={null}]]]>
+                <![CDATA[[TestResult name=Bookmark status=SUCCESS method=Chat_2Bookmark.Bookmark()[pri:1, instance:Title_Manipulation.Chat_2Bookmark@488d1cd7] output={null}]]]>
               </value>
             </param>
           </params>
@@ -47,185 +28,40 @@
         </test-method> <!-- closeApp -->
       </class> <!-- Title_Manipulation.Chat_2Bookmark -->
       <class name="Title_Manipulation.Chat_Delete">
-        <test-method is-config="true" signature="openApp()[pri:0, instance:Title_Manipulation.Chat_Delete@4e423aa2]" started-at="2025-01-13T21:05:05 IST" name="openApp" finished-at="2025-01-13T21:05:12 IST" duration-ms="6450" status="PASS">
+        <test-method is-config="true" signature="openApp()[pri:0, instance:Title_Manipulation.Chat_Delete@38ba6ce3]" started-at="2025-01-14T15:23:55 IST" name="openApp" finished-at="2025-01-14T15:23:59 IST" duration-ms="4111" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openApp -->
-        <test-method signature="Delete()[pri:0, instance:Title_Manipulation.Chat_Delete@4e423aa2]" started-at="2025-01-13T21:05:12 IST" name="Delete" finished-at="2025-01-13T21:05:15 IST" duration-ms="2910" status="FAIL">
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[Unexpected exception: element not interactable: element has zero size
-  (Session info: chrome=131.0.6778.265)
-Build info: version: '4.27.0', revision: 'd6e718d134'
-System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.12'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [ac739daf3900ca067350f7dfa23599c5, clickElement {id=f.4481F3BFA02A267C3C82B67B562127EF.d.FF40FA7C7F0D520DDACB1575DA655D11.e.63}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.265, chrome: {chromedriverVersion: 131.0.6778.264 (2d05e315153..., userDataDir: C:\Users\Admin\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:9662}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:9662/devtool..., se:cdpVersion: 131.0.6778.265, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (ac739daf3900ca067350f7dfa23599c5)] -> xpath: //span[text()='Delete']]
-Session ID: ac739daf3900ca067350f7dfa23599c5]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: Unexpected exception: element not interactable: element has zero size
-  (Session info: chrome=131.0.6778.265)
-Build info: version: '4.27.0', revision: 'd6e718d134'
-System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.12'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [ac739daf3900ca067350f7dfa23599c5, clickElement {id=f.4481F3BFA02A267C3C82B67B562127EF.d.FF40FA7C7F0D520DDACB1575DA655D11.e.63}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.265, chrome: {chromedriverVersion: 131.0.6778.264 (2d05e315153..., userDataDir: C:\Users\Admin\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:9662}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:9662/devtool..., se:cdpVersion: 131.0.6778.265, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (ac739daf3900ca067350f7dfa23599c5)] -> xpath: //span[text()='Delete']]
-Session ID: ac739daf3900ca067350f7dfa23599c5
-at org.testng.Assert.fail(Assert.java:111)
-at Title_Manipulation.Chat_Delete.Delete(Chat_Delete.java:46)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:848)
-at org.testng.TestRunner.run(TestRunner.java:621)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
-at org.testng.SuiteRunner.run(SuiteRunner.java:336)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
-at org.testng.TestNG.runSuites(TestNG.java:1114)
-at org.testng.TestNG.run(TestNG.java:1082)
-at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:136)
-at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:193)
-at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:94)
-at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:145)
-at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:428)
-at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
-at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:562)
-at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:548)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
+        <test-method signature="Delete()[pri:0, instance:Title_Manipulation.Chat_Delete@38ba6ce3]" started-at="2025-01-14T15:23:59 IST" name="Delete" finished-at="2025-01-14T15:24:05 IST" duration-ms="5509" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Delete -->
-        <test-method is-config="true" signature="closeApp(org.testng.ITestResult)[pri:0, instance:Title_Manipulation.Chat_Delete@4e423aa2]" started-at="2025-01-13T21:05:15 IST" name="closeApp" finished-at="2025-01-13T21:05:15 IST" duration-ms="2" status="FAIL">
+        <test-method is-config="true" signature="closeApp(org.testng.ITestResult)[pri:0, instance:Title_Manipulation.Chat_Delete@38ba6ce3]" started-at="2025-01-14T15:24:05 IST" name="closeApp" finished-at="2025-01-14T15:24:05 IST" duration-ms="0" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=Delete status=FAILURE method=Chat_Delete.Delete()[pri:0, instance:Title_Manipulation.Chat_Delete@4e423aa2] output={null}]]]>
+                <![CDATA[[TestResult name=Delete status=SUCCESS method=Chat_Delete.Delete()[pri:0, instance:Title_Manipulation.Chat_Delete@38ba6ce3] output={null}]]]>
               </value>
             </param>
           </params>
-          <exception class="org.openqa.selenium.NoSuchSessionException">
-            <message>
-              <![CDATA[Session ID is null. Using WebDriver after calling quit()?
-Build info: version: '4.27.0', revision: 'd6e718d134'
-System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.12'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [null, screenshot {}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.265, chrome: {chromedriverVersion: 131.0.6778.264 (2d05e315153..., userDataDir: C:\Users\Admin\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:9662}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:9662/devtool..., se:cdpVersion: 131.0.6778.265, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchSessionException: Session ID is null. Using WebDriver after calling quit()?
-Build info: version: '4.27.0', revision: 'd6e718d134'
-System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.12'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [null, screenshot {}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.265, chrome: {chromedriverVersion: 131.0.6778.264 (2d05e315153..., userDataDir: C:\Users\Admin\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:9662}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:9662/devtool..., se:cdpVersion: 131.0.6778.265, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:151)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:618)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:622)
-at org.openqa.selenium.remote.RemoteWebDriver.getScreenshotAs(RemoteWebDriver.java:334)
-at genericLib.Screenshot.getscreenshot(Screenshot.java:51)
-at genericLib.BaseClass.closeApp(BaseClass.java:107)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:390)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:325)
-at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:810)
-at org.testng.internal.invokers.TestInvoker.runAfterConfigurations(TestInvoker.java:779)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:755)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:848)
-at org.testng.TestRunner.run(TestRunner.java:621)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
-at org.testng.SuiteRunner.run(SuiteRunner.java:336)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
-at org.testng.TestNG.runSuites(TestNG.java:1114)
-at org.testng.TestNG.run(TestNG.java:1082)
-at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:136)
-at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:193)
-at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:94)
-at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:145)
-at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:428)
-at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
-at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:562)
-at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:548)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchSessionException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeApp -->
       </class> <!-- Title_Manipulation.Chat_Delete -->
       <class name="Title_Manipulation.Chat_3Public">
-        <test-method is-config="true" signature="openApp()[pri:0, instance:Title_Manipulation.Chat_3Public@25f4878b]" started-at="2025-01-13T21:04:45 IST" name="openApp" finished-at="2025-01-13T21:04:53 IST" duration-ms="7224" status="PASS">
+        <test-method is-config="true" signature="openApp()[pri:0, instance:Title_Manipulation.Chat_3Public@68dc098b]" started-at="2025-01-14T15:23:41 IST" name="openApp" finished-at="2025-01-14T15:23:47 IST" duration-ms="5601" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openApp -->
-        <test-method signature="publicChat()[pri:1, instance:Title_Manipulation.Chat_3Public@25f4878b]" started-at="2025-01-13T21:04:53 IST" name="publicChat" finished-at="2025-01-13T21:04:56 IST" duration-ms="3528" status="PASS">
+        <test-method signature="publicChat()[pri:1, instance:Title_Manipulation.Chat_3Public@68dc098b]" started-at="2025-01-14T15:23:47 IST" name="publicChat" finished-at="2025-01-14T15:23:53 IST" duration-ms="6292" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- publicChat -->
-        <test-method is-config="true" signature="closeApp(org.testng.ITestResult)[pri:0, instance:Title_Manipulation.Chat_3Public@25f4878b]" started-at="2025-01-13T21:04:56 IST" name="closeApp" finished-at="2025-01-13T21:04:56 IST" duration-ms="2" status="PASS">
+        <test-method is-config="true" signature="closeApp(org.testng.ITestResult)[pri:0, instance:Title_Manipulation.Chat_3Public@68dc098b]" started-at="2025-01-14T15:23:53 IST" name="closeApp" finished-at="2025-01-14T15:23:55 IST" duration-ms="2003" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=publicChat status=SUCCESS method=Chat_3Public.publicChat()[pri:1, instance:Title_Manipulation.Chat_3Public@25f4878b] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- closeApp -->
-        <test-method is-config="true" signature="openApp()[pri:0, instance:Title_Manipulation.Chat_3Public@25f4878b]" started-at="2025-01-13T21:04:56 IST" name="openApp" finished-at="2025-01-13T21:05:01 IST" duration-ms="4486" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- openApp -->
-        <test-method signature="PrivateChat()[pri:2, instance:Title_Manipulation.Chat_3Public@25f4878b]" started-at="2025-01-13T21:05:01 IST" name="PrivateChat" finished-at="2025-01-13T21:05:05 IST" duration-ms="4716" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- PrivateChat -->
-        <test-method is-config="true" signature="closeApp(org.testng.ITestResult)[pri:0, instance:Title_Manipulation.Chat_3Public@25f4878b]" started-at="2025-01-13T21:05:05 IST" name="closeApp" finished-at="2025-01-13T21:05:05 IST" duration-ms="1" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=PrivateChat status=SUCCESS method=Chat_3Public.PrivateChat()[pri:2, instance:Title_Manipulation.Chat_3Public@25f4878b] output={null}]]]>
+                <![CDATA[[TestResult name=publicChat status=SUCCESS method=Chat_3Public.publicChat()[pri:1, instance:Title_Manipulation.Chat_3Public@68dc098b] output={null}]]]>
               </value>
             </param>
           </params>
@@ -234,48 +70,48 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:548)
         </test-method> <!-- closeApp -->
       </class> <!-- Title_Manipulation.Chat_3Public -->
       <class name="Chat_Response.Chat_Response">
-        <test-method is-config="true" signature="configBs()[pri:0, instance:Chat_Response.Chat_Response@20435c40]" started-at="2025-01-13T21:02:00 IST" name="configBs" finished-at="2025-01-13T21:02:00 IST" duration-ms="443" status="PASS">
+        <test-method is-config="true" signature="configBs()[pri:0, instance:Chat_Response.Chat_Response@2141a12]" started-at="2025-01-14T15:20:04 IST" name="configBs" finished-at="2025-01-14T15:20:04 IST" duration-ms="342" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- configBs -->
-        <test-method is-config="true" signature="openApp()[pri:0, instance:Chat_Response.Chat_Response@20435c40]" started-at="2025-01-13T21:02:01 IST" name="openApp" finished-at="2025-01-13T21:02:09 IST" duration-ms="8404" status="PASS">
+        <test-method is-config="true" signature="openApp()[pri:0, instance:Chat_Response.Chat_Response@2141a12]" started-at="2025-01-14T15:20:04 IST" name="openApp" finished-at="2025-01-14T15:20:42 IST" duration-ms="37833" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openApp -->
-        <test-method signature="testValidScenario()[pri:0, instance:Chat_Response.Chat_Response@20435c40]" started-at="2025-01-13T21:02:09 IST" name="testValidScenario" finished-at="2025-01-13T21:02:41 IST" duration-ms="31938" status="PASS">
+        <test-method signature="testValidScenario()[pri:0, instance:Chat_Response.Chat_Response@2141a12]" started-at="2025-01-14T15:20:42 IST" name="testValidScenario" finished-at="2025-01-14T15:21:15 IST" duration-ms="32704" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testValidScenario -->
-        <test-method is-config="true" signature="closeApp(org.testng.ITestResult)[pri:0, instance:Chat_Response.Chat_Response@20435c40]" started-at="2025-01-13T21:02:41 IST" name="closeApp" finished-at="2025-01-13T21:02:41 IST" duration-ms="27" status="PASS">
+        <test-method is-config="true" signature="closeApp(org.testng.ITestResult)[pri:0, instance:Chat_Response.Chat_Response@2141a12]" started-at="2025-01-14T15:21:15 IST" name="closeApp" finished-at="2025-01-14T15:21:15 IST" duration-ms="19" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=testValidScenario status=SUCCESS method=Chat_Response.testValidScenario()[pri:0, instance:Chat_Response.Chat_Response@20435c40] output={null}]]]>
+                <![CDATA[[TestResult name=testValidScenario status=SUCCESS method=Chat_Response.testValidScenario()[pri:0, instance:Chat_Response.Chat_Response@2141a12] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeApp -->
-        <test-method is-config="true" signature="configAs()[pri:0, instance:Chat_Response.Chat_Response@20435c40]" started-at="2025-01-13T21:05:15 IST" name="configAs" finished-at="2025-01-13T21:05:15 IST" duration-ms="595" status="PASS">
+        <test-method is-config="true" signature="configAs()[pri:0, instance:Chat_Response.Chat_Response@2141a12]" started-at="2025-01-14T15:24:05 IST" name="configAs" finished-at="2025-01-14T15:24:06 IST" duration-ms="590" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- configAs -->
       </class> <!-- Chat_Response.Chat_Response -->
       <class name="InternetSearch.InternetSearch">
-        <test-method is-config="true" signature="openApp()[pri:0, instance:InternetSearch.InternetSearch@38ba6ce3]" started-at="2025-01-13T21:02:51 IST" name="openApp" finished-at="2025-01-13T21:03:00 IST" duration-ms="8739" status="PASS">
+        <test-method is-config="true" signature="openApp()[pri:0, instance:InternetSearch.InternetSearch@6d07a63d]" started-at="2025-01-14T15:22:00 IST" name="openApp" finished-at="2025-01-14T15:22:05 IST" duration-ms="4477" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openApp -->
-        <test-method signature="InterNetSearch()[pri:0, instance:InternetSearch.InternetSearch@38ba6ce3]" started-at="2025-01-13T21:03:00 IST" name="InterNetSearch" finished-at="2025-01-13T21:03:32 IST" duration-ms="32108" status="PASS">
+        <test-method signature="InterNetSearch()[pri:0, instance:InternetSearch.InternetSearch@6d07a63d]" started-at="2025-01-14T15:22:05 IST" name="InterNetSearch" finished-at="2025-01-14T15:22:37 IST" duration-ms="32262" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- InterNetSearch -->
-        <test-method is-config="true" signature="closeApp(org.testng.ITestResult)[pri:0, instance:InternetSearch.InternetSearch@38ba6ce3]" started-at="2025-01-13T21:03:32 IST" name="closeApp" finished-at="2025-01-13T21:03:32 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="closeApp(org.testng.ITestResult)[pri:0, instance:InternetSearch.InternetSearch@6d07a63d]" started-at="2025-01-14T15:22:37 IST" name="closeApp" finished-at="2025-01-14T15:22:37 IST" duration-ms="3" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=InterNetSearch status=SUCCESS method=InternetSearch.InterNetSearch()[pri:0, instance:InternetSearch.InternetSearch@38ba6ce3] output={null}]]]>
+                <![CDATA[[TestResult name=InterNetSearch status=SUCCESS method=InternetSearch.InterNetSearch()[pri:0, instance:InternetSearch.InternetSearch@6d07a63d] output={null}]]]>
               </value>
             </param>
           </params>
@@ -284,19 +120,19 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:548)
         </test-method> <!-- closeApp -->
       </class> <!-- InternetSearch.InternetSearch -->
       <class name="Doc_Search.Doc_Search">
-        <test-method is-config="true" signature="openApp()[pri:0, instance:Doc_Search.Doc_Search@68dc098b]" started-at="2025-01-13T21:02:41 IST" name="openApp" finished-at="2025-01-13T21:02:45 IST" duration-ms="4417" status="PASS">
+        <test-method is-config="true" signature="openApp()[pri:0, instance:Doc_Search.Doc_Search@479ceda0]" started-at="2025-01-14T15:21:15 IST" name="openApp" finished-at="2025-01-14T15:21:54 IST" duration-ms="39172" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openApp -->
-        <test-method signature="testValidScenario()[pri:0, instance:Doc_Search.Doc_Search@68dc098b]" started-at="2025-01-13T21:02:45 IST" name="testValidScenario" finished-at="2025-01-13T21:02:51 IST" duration-ms="6122" status="PASS">
+        <test-method signature="testValidScenario()[pri:0, instance:Doc_Search.Doc_Search@479ceda0]" started-at="2025-01-14T15:21:54 IST" name="testValidScenario" finished-at="2025-01-14T15:22:00 IST" duration-ms="6444" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testValidScenario -->
-        <test-method is-config="true" signature="closeApp(org.testng.ITestResult)[pri:0, instance:Doc_Search.Doc_Search@68dc098b]" started-at="2025-01-13T21:02:51 IST" name="closeApp" finished-at="2025-01-13T21:02:51 IST" duration-ms="5" status="PASS">
+        <test-method is-config="true" signature="closeApp(org.testng.ITestResult)[pri:0, instance:Doc_Search.Doc_Search@479ceda0]" started-at="2025-01-14T15:22:00 IST" name="closeApp" finished-at="2025-01-14T15:22:00 IST" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=testValidScenario status=SUCCESS method=Doc_Search.testValidScenario()[pri:0, instance:Doc_Search.Doc_Search@68dc098b] output={null}]]]>
+                <![CDATA[[TestResult name=testValidScenario status=SUCCESS method=Doc_Search.testValidScenario()[pri:0, instance:Doc_Search.Doc_Search@479ceda0] output={null}]]]>
               </value>
             </param>
           </params>
@@ -305,136 +141,22 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:548)
         </test-method> <!-- closeApp -->
       </class> <!-- Doc_Search.Doc_Search -->
       <class name="Title_Manipulation.Chat_1Rename">
-        <test-method is-config="true" signature="openApp()[pri:0, instance:Title_Manipulation.Chat_1Rename@d278d2b]" started-at="2025-01-13T21:03:32 IST" name="openApp" finished-at="2025-01-13T21:03:37 IST" duration-ms="4904" status="PASS">
+        <test-method is-config="true" signature="openApp()[pri:0, instance:Title_Manipulation.Chat_1Rename@571c5681]" started-at="2025-01-14T15:22:37 IST" name="openApp" finished-at="2025-01-14T15:22:43 IST" duration-ms="5753" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openApp -->
-        <test-method signature="Rename()[pri:0, instance:Title_Manipulation.Chat_1Rename@d278d2b]" started-at="2025-01-13T21:03:37 IST" name="Rename" finished-at="2025-01-13T21:03:42 IST" duration-ms="5110" status="FAIL">
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[Notification message does not match! expected [Chat rename 22successfully to 'Automation'] but found [Chat rename successfully to 'Automation']]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: Notification message does not match! expected [Chat rename 22successfully to 'Automation'] but found [Chat rename successfully to 'Automation']
-at org.testng.Assert.fail(Assert.java:111)
-at org.testng.Assert.failNotEquals(Assert.java:1578)
-at org.testng.Assert.assertEqualsImpl(Assert.java:150)
-at org.testng.Assert.assertEquals(Assert.java:132)
-at org.testng.Assert.assertEquals(Assert.java:656)
-at Title_Manipulation.Chat_1Rename.Rename(Chat_1Rename.java:52)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:848)
-at org.testng.TestRunner.run(TestRunner.java:621)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
-at org.testng.SuiteRunner.run(SuiteRunner.java:336)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
-at org.testng.TestNG.runSuites(TestNG.java:1114)
-at org.testng.TestNG.run(TestNG.java:1082)
-at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:136)
-at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:193)
-at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:94)
-at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:145)
-at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:428)
-at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
-at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:562)
-at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:548)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
+        <test-method signature="Rename()[pri:0, instance:Title_Manipulation.Chat_1Rename@571c5681]" started-at="2025-01-14T15:22:43 IST" name="Rename" finished-at="2025-01-14T15:22:48 IST" duration-ms="5640" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Rename -->
-        <test-method is-config="true" signature="closeApp(org.testng.ITestResult)[pri:0, instance:Title_Manipulation.Chat_1Rename@d278d2b]" started-at="2025-01-13T21:03:42 IST" name="closeApp" finished-at="2025-01-13T21:03:42 IST" duration-ms="22" status="FAIL">
+        <test-method is-config="true" signature="closeApp(org.testng.ITestResult)[pri:0, instance:Title_Manipulation.Chat_1Rename@571c5681]" started-at="2025-01-14T15:22:48 IST" name="closeApp" finished-at="2025-01-14T15:22:48 IST" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=Rename status=FAILURE method=Chat_1Rename.Rename()[pri:0, instance:Title_Manipulation.Chat_1Rename@d278d2b] output={null}]]]>
+                <![CDATA[[TestResult name=Rename status=SUCCESS method=Chat_1Rename.Rename()[pri:0, instance:Title_Manipulation.Chat_1Rename@571c5681] output={null}]]]>
               </value>
             </param>
           </params>
-          <exception class="org.openqa.selenium.NoSuchSessionException">
-            <message>
-              <![CDATA[Session ID is null. Using WebDriver after calling quit()?
-Build info: version: '4.27.0', revision: 'd6e718d134'
-System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.12'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [null, screenshot {}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.265, chrome: {chromedriverVersion: 131.0.6778.264 (2d05e315153..., userDataDir: C:\Users\Admin\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:9505}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:9505/devtool..., se:cdpVersion: 131.0.6778.265, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchSessionException: Session ID is null. Using WebDriver after calling quit()?
-Build info: version: '4.27.0', revision: 'd6e718d134'
-System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.12'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [null, screenshot {}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.265, chrome: {chromedriverVersion: 131.0.6778.264 (2d05e315153..., userDataDir: C:\Users\Admin\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:9505}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:9505/devtool..., se:cdpVersion: 131.0.6778.265, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:151)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:618)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:622)
-at org.openqa.selenium.remote.RemoteWebDriver.getScreenshotAs(RemoteWebDriver.java:334)
-at genericLib.Screenshot.getscreenshot(Screenshot.java:51)
-at genericLib.BaseClass.closeApp(BaseClass.java:107)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:390)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:325)
-at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:810)
-at org.testng.internal.invokers.TestInvoker.runAfterConfigurations(TestInvoker.java:779)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:755)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:848)
-at org.testng.TestRunner.run(TestRunner.java:621)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
-at org.testng.SuiteRunner.run(SuiteRunner.java:336)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
-at org.testng.TestNG.runSuites(TestNG.java:1114)
-at org.testng.TestNG.run(TestNG.java:1082)
-at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:136)
-at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:193)
-at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:94)
-at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:145)
-at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:428)
-at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
-at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:562)
-at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:548)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchSessionException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeApp -->

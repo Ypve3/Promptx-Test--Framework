@@ -3,24 +3,15 @@
 <suite thread-count="1" name="Failed suite [Surefire suite]" verbose="0">
   <test thread-count="1" name="Surefire test(failed)" verbose="0">
     <classes>
-      <class name="Title_Manipulation.Chat_1Rename">
+      <class name="Title_Manipulation.Chat_2Bookmark">
         <methods>
-          <include name="Rename"/>
+          <include name="Bookmark"/>
           <include name="openApp"/>
           <include name="configBs"/>
           <include name="configAs"/>
           <include name="closeApp"/>
         </methods>
-      </class> <!-- Title_Manipulation.Chat_1Rename -->
-      <class name="Title_Manipulation.Chat_Delete">
-        <methods>
-          <include name="Delete"/>
-          <include name="openApp"/>
-          <include name="configBs"/>
-          <include name="configAs"/>
-          <include name="closeApp"/>
-        </methods>
-      </class> <!-- Title_Manipulation.Chat_Delete -->
+      </class> <!-- Title_Manipulation.Chat_2Bookmark -->
     </classes>
   </test> <!-- Surefire test(failed) -->
 </suite> <!-- Failed suite [Surefire suite] -->
