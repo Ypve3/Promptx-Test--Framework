@@ -14,42 +14,47 @@ import org.testng.annotations.Test;
 import genericLib.BaseClass;
 
 public class Chat_4Delete extends BaseClass {
-  
-	private WebDriverWait wait;
-	
-	@Test
-	public void Delete() {
-	    ChromeOptions options = new ChromeOptions();
-	    options.addArguments("--incognito");
-	    try {
-	        driver.findElement(By.xpath("(//span[@aria-label='ellipsis'])[1]")).click();
-	        driver.findElement(By.xpath("//div[text()='Delete Chat']")).click();
 
-	        wait = new WebDriverWait(driver, Duration.ofSeconds(10));
-	        WebElement deleteButton = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//span[text()='Delete']")));
-	        ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", deleteButton);
-	        deleteButton.click();
+    private WebDriverWait wait;
 
-	        WebElement notification = wait.until(ExpectedConditions.presenceOfElementLocated(
-	            By.xpath("//div[contains(@class, 'ant-notification-notice')]//div[@class='ant-notification-notice-message']")
-	        ));
-	        wait.until(ExpectedConditions.textToBePresentInElement(notification, "Chat Deleted Successfully"));
+    @Test
+    public void Delete() {
+        ChromeOptions options = new ChromeOptions();
+        options.addArguments("--incognito");
+        try {
+            wait = new WebDriverWait(driver, Duration.ofSeconds(10));
 
-	        String actualMessage = notification.getText();
-	        System.out.println("Actual Notification Message: " + actualMessage);
+            // Click on the ellipsis icon
+            WebElement ellipsisIcon = wait.until(ExpectedConditions.elementToBeClickable(By.xpath("(//span[@aria-label='ellipsis'])[1]")));
+            ellipsisIcon.click();
 
-	        String expectedMessage = "Chat Deleted Successfully";
-	        Assert.assertEquals(actualMessage, expectedMessage, "Notification message does not match!");
+            // Wait for the 'Delete Chat' option to be visible and click it
+            WebElement deleteChatOption = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//div[text()='Delete Chat']")));
+            ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", deleteChatOption);
+            deleteChatOption.click();
 
-	    } catch (Exception e) {
-	        System.out.println("Test failed: " + e.getMessage());
-	        Assert.fail("Unexpected exception: " + e.getMessage());
-	    } finally {
-	        if (driver != null) {
-	            driver.quit();
-	        }
-	    }
-	}
+            // Wait for the 'Delete' confirmation button and click it
+            WebElement deleteButton = wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//span[text()='Delete']")));
+            ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", deleteButton);
+            deleteButton.click();
+
+            // Wait for the notification message
+            WebElement notification = wait.until(ExpectedConditions.presenceOfElementLocated(
+                By.xpath("//div[contains(@class, 'ant-notification-notice')]//div[@class='ant-notification-notice-message']")
+            ));
+            wait.until(ExpectedConditions.textToBePresentInElement(notification, "Chat Deleted Successfully"));
+
+            // Validate the notification message
+            String actualMessage = notification.getText();
+            System.out.println("Actual Notification Message: " + actualMessage);
+
+            String expectedMessage = "Chat Deleted Successfully";
+            Assert.assertEquals(actualMessage, expectedMessage, "Notification message does not match!");
+
+        } catch (Exception e) {
+            System.out.println("Test failed: " + e.getMessage());
+            Assert.fail("Unexpected exception: " + e.getMessage());
+        } 
+        
+    }
 }
-	 
-	
