@@ -25,6 +25,7 @@ public class Chat_1Rename extends BaseClass {
 
             // Perform actions to rename the chat
             driver.findElement(By.xpath("(//span[@aria-label='ellipsis'])[1]")).click();
+            Thread.sleep(1000);
             driver.findElement(By.xpath("//span[text()='Rename']")).click();
 
             // Clear the input field and enter new text
