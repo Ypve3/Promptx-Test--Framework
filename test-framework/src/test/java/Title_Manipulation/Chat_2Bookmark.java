@@ -26,10 +26,11 @@ public class Chat_2Bookmark extends BaseClass{
        
         driver.findElement(By.xpath("//div[@title='Chat Search']")).click();
         driver.findElement(By.xpath("//input[@placeholder='Ask something to AI']")).sendKeys("Agile Adoption" + Keys.RETURN);
-        Thread.sleep(40000);
+        Thread.sleep(35000);
         driver.navigate().refresh();
         driver.findElement(By.xpath("(//span[@aria-label='ellipsis'])[1]")).click();
-        driver.findElement(By.xpath("//span[text()='Bookmark']")).click();
+        Thread.sleep(1000);
+        driver.findElement(By.xpath("//span[contains(text(),'Bookmark')]")).click();
         wait = new WebDriverWait(driver, Duration.ofSeconds(10));
         WebElement notification = wait.until(ExpectedConditions.presenceOfElementLocated(
         By.xpath("//div[contains(@class, 'ant-notification-notice')]//div[@class='ant-notification-notice-message']")
@@ -55,3 +56,4 @@ public class Chat_2Bookmark extends BaseClass{
     }
        
 }}
+
