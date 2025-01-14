@@ -14,7 +14,7 @@ public class Chat_Response extends BaseClass {
 //        test = reports.createTest("Chat_Response"); // Start ExtentReports logging
         driver.findElement(By.xpath("//div[@title='Chat Search']")).click();
         driver.findElement(By.xpath("//input[@placeholder='Ask something to AI']")).sendKeys("Promptx" + Keys.RETURN);
-        Thread.sleep(30000);
+        Thread.sleep(20000);
         driver.quit();
       
     }
