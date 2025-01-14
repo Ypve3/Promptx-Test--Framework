@@ -45,26 +45,13 @@ public class Chat_2Bookmark extends BaseClass{
         
         Assert.assertEquals(actualMessage, expectedMessage, "Notification message does not match!");
        
+        driver.findElement(By.xpath("//div[contains(text(),'Bookmark')]")).click();
+		Thread.sleep(3000);
+		driver.findElement(By.xpath("//*[name()='path' and contains(@d,'M908.1 353')]")).click();
 
     } catch (Exception e) {
         System.out.println("Test failed: " + e.getMessage());
         Assert.fail("Unexpected exception: " + e.getMessage());
     }
-        finally {
-            // Ensure the browser is closed
-            if (driver != null) {
-                driver.quit();  // Close all windows and end the session
-            }}
-}
-	
-	@Test(priority = 2)
-	public void Remove_Bookmark() throws InterruptedException
-	{
-		
-		driver.findElement(By.xpath("//div[contains(text(),'Bookmark')]")).click();
-		Thread.sleep(3000);
-		driver.findElement(By.xpath("//*[name()='path' and contains(@d,'M908.1 353')]")).click();
-		driver.quit();
-	}
-	
-}
+       
+}}

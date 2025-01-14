@@ -35,24 +35,20 @@ public class Chat_3Public extends BaseClass {
 	        // Assert the notification text
 	        Assert.assertEquals(actualMessage, expectedMessage, "Notification message does not match!");
 	       
+	        driver.findElement(By.xpath("//div[normalize-space()='Public']")).click();
+    		driver.findElement(By.xpath("(//span[@class='anticon anticon-more ant-dropdown-trigger'])[1]")).click();
+    		driver.findElement(By.xpath("//span[text()='Make Chat Private']")).click();
 
 	    } catch (Exception e) {
 	        System.out.println("Test failed: " + e.getMessage());
 	        Assert.fail("Unexpected exception: " + e.getMessage());
 	    }
-		finally {
-            // Ensure the browser is closed
-            if (driver != null) {
-                driver.quit();  // Close all windows and end the session
-            }
-	}}
-	
-	@Test(priority = 2)
-	public void PrivateChat() {
+		}
+            
+            
+    		
+
+	}
+
 		
-		driver.findElement(By.xpath("//div[normalize-space()='Public']")).click();
-		driver.findElement(By.xpath("(//span[@class='anticon anticon-more ant-dropdown-trigger'])[1]")).click();
-		driver.findElement(By.xpath("//span[text()='Make Chat Private']")).click();
-		driver.quit();
-}
-}
+		
